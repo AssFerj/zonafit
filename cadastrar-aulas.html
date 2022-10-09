@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZonaFit | Cadastro de Aulas</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Icons Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-agifit">
+        <div class="container-fluid">
+          <a class="navbar-brand text-agifit" href="#">AGIFIT</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active-agifit text-agifit" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-agifit" aria-current="page" href="#">Aulas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-agifit" aria-current="page" href="#footer">Contato</a>
+                </li>
+            </ul>
+            <div class="d-flex justify-content-end dropdown">
+                <button class="btn" type="button" dropdown-toggle id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-circle text-agifit fs-3"></i></button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Sair</a></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!--Início - Form Cadastro de Aula-->
+    <div class="container py-5">
+        <div class="row">
+            <div class="banner p-5 text-agifit">
+                <h1>Cadastro de Aula</h1>
+            </div>
+            <form class="row g-3">
+                <div class="col-md-3">
+                  <label for="nome-aula-cad" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="nome-aula-cad">
+                </div>
+                <div class="col-md-3">
+                  <label for="valor-aula-cad" class="form-label">Valor</label>
+                  <input type="number" step="any" class="form-control" id="valor-aula-cad">
+                </div>
+                <div class="col-md-3">
+                    <label for="desc-aula-cad" class="form-label">Descrição</label>
+                    <input type="email" class="form-control" id="desc-aula-cad">
+                </div>
+                <div class="col-md-3">
+                  <label for="inputState" class="form-label">Turno</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                  </select>
+                </div>
+ 
+                <div class="col-12">
+                    <button type="submit" class="btn btn-agifit">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div><!--Fim - Cadastro de Aula-->
+
+    <!--Início - Lista de Aulas-->
+    <div class="row px-5 mb-5">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    Aulas
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">NOME</th>
+                            <th scope="col">VALOR</th>
+                            <th scope="col">TURNO</th>
+                            <th scope="col">DESCRIÇÃO</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@mdo</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <a href="admin.html" class="btn btn-agifit">Voltar</a>
+                </div>
+            </div>
+        </div>
+    </div><!--Fim - Lista de Aulas-->
+
+    <footer class="container-fluid bg-agifit pt-5" id="footer">
+        <div class="row">
+            <div class="col-4 px-4">
+                <h4 class="text-center text-agifit mb-4">agifit</h4>
+                <p class="text-agifit-p">Atuando há mais de vinte anos no mundo do esporte e nutrição, contamos com uma equipe multidisciplinar, propiciando uma melhor qualidade de vida.</p>
+            </div>
+            <div class="col-4">
+                <h4 class="text-center text-agifit mb-4">CONTATOS</h4>
+                <div class="row text-center">
+                    <p class="text-agifit-p">(19) 3225-1791</p>
+                </div>
+                <div class="row text-center">
+                    <p class="text-agifit-p">mohavi@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <h4 class="text-center text-agifit mb-4">REDES SOCIAIS</h4>
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="#"><i class="bi bi-facebook fs-1 text-agifit-p mx-2"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-1 text-agifit-p mx-2"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-1 text-agifit-p mx-2"></i></a>
+                        <a href="#"><i class="bi bi-pinterest fs-1 text-agifit-p mx-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <p class="text-agifit-p mt-5">Copyright © 2022</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

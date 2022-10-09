@@ -1,0 +1,50 @@
+.bg-agifit{
+    background-image: linear-gradient(150deg, #741a1a, #162735);
+}
+.text-agifit{
+    color: #fff4be;
+    font-weight: 600;
+}
+.text-agifit-p{
+    color: #fff4be;
+}
+.text-agifit:hover{
+    color: #fff4be;
+}
+.active-agifit{
+    font-weight: 600;
+    border-bottom: 2px solid #fff4be;
+}
+.border-agifit{
+    border: 1px dolid #741a1a;
+}
+
+.btn-agifit{
+    background-color: #162735;
+    color: #fff4be;
+    border-radius: 6px;
+    border: none;
+}
+.btn-agifit:hover{
+    background-color: #285172;
+    color: #fff4be;
+}
+.banner{
+    background-image: linear-gradient(150deg, #741a1a, #162735);
+    border-radius: 6px;
+}
+.banner-perfil{
+    background-image: url("/assets/img/banner-perfil.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 6px;
+    height: 15rem;
+}
+.border-img{
+    border: 6px solid #fff4be;
+}
+.mt-perfil{
+    margin-top: 9rem;
+}
