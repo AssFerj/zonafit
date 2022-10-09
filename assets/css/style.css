@@ -2,7 +2,7 @@
     background-image: linear-gradient(150deg, #741a1a, #162735);
 }
 .text-agifit{
-    color: #fff4be;
+    color: #fff4be !important;
     font-weight: 600;
 }
 .text-agifit-p{
